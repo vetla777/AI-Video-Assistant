@@ -1,44 +1,45 @@
-# AI Meeting / Video Assistant
-# Python 3.10 or 3.11 recommended
+# ── AI Video / Meeting Assistant ─────────────────────────────────────────────
+# Python 3.14 compatible dependency set
 
-# Audio / Video
+# ── Audio / Video Acquisition ────────────────────────────────────────────────
 yt-dlp>=2024.4.9
 pydub>=0.25.1
 ffmpeg-python>=0.2.0
+audioop-lts>=0.2.2
 
-# Whisper
+# ── Speech-to-Text ───────────────────────────────────────────────────────────
 openai-whisper>=20231117
 torch>=2.2.0
 torchaudio>=2.2.0
 
-# Translation
+# ── Translation ──────────────────────────────────────────────────────────────
 deep-translator>=1.11.4
 
-# LangChain
+# ── LangChain + Mistral ──────────────────────────────────────────────────────
 langchain>=0.2.0
 langchain-core>=0.2.0
 langchain-community>=0.2.0
 langchain-mistralai>=0.1.0
 mistralai>=0.4.0
 
-# RAG
+# ── RAG / Vector Database ────────────────────────────────────────────────────
 chromadb>=0.5.0
 sentence-transformers>=3.0.0
 langchain-huggingface>=0.0.3
 huggingface-hub>=0.23.0
 tiktoken>=0.7.0
 
-# Streamlit
+# ── Streamlit ────────────────────────────────────────────────────────────────
 streamlit>=1.35.0
 
-# Environment
+# ── Environment Variables ────────────────────────────────────────────────────
 python-dotenv>=1.0.0
 
-# Utilities
+# ── PDF / TXT Export ─────────────────────────────────────────────────────────
+reportlab>=4.2.0
+fpdf2>=2.7.9
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
 numpy>=1.26.0
 tqdm>=4.66.0
 requests>=2.32.0
-
-# PDF export
-reportlab>=4.2.0
-fpdf2>=2.7.9
